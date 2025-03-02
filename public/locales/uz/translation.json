@@ -1,0 +1,23 @@
+{
+    "welcome": "Xush kelibsiz",
+    "home": "Bosh sahifa",
+    "products": "Mahsulotlar",
+    "cart": "Savatcha",
+    "wishlist": "Sevimlilar",
+    "checkout": "To'lov",
+    "contact": "Aloqa",
+    "about_us": "Biz haqimizda",
+    "login": "Kirish",
+    "logout": "Chiqish",
+    "register": "Ro'yxatdan o'tish",
+    "search": "Qidirish",
+    "search_placeholder": "Qidirish...",
+    "language": "Til",
+    "currency": "Valyuta",
+    "profile": "Profil",
+    "orders": "Buyurtmalar",
+    "settings": "Sozlamalar",
+    "help": "Yordam",
+    "privacy_policy": "Maxfiylik siyosati",
+    "terms_of_service": "Xizmat ko'rsatish shartlari"
+}

@@ -1,0 +1,23 @@
+{
+    "welcome": "Welcome to our website",
+    "home": "Home",
+    "wishlist": "Wishlist",
+    "products": "Products",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "contact": "Contact",
+    "about_us": "About Us",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "search": "Search",
+    "search_placeholder": "Search...",
+    "language": "Language",
+    "currency": "Currency",
+    "profile": "Profile",
+    "orders": "Orders",
+    "settings": "Settings",
+    "help": "Help",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service"
+}
