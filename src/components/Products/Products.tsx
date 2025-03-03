@@ -1,10 +1,11 @@
 import { FC, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CarouselItem from "./Carousel/CarouselItem";
-import { Scrollbar } from "swiper/modules";
+import { Mousewheel, Scrollbar } from "swiper/modules";
 
 import StyledLink from "@/styledComponents/StyledLink";
 import { ProductType } from "@/lib/types";
+import { useTranslation } from "react-i18next";
 
 import "swiper/css";
 import "swiper/css/scrollbar";
@@ -13,6 +14,7 @@ import { client } from "@/utils/Client";
 import { SANITY_PRODUCTS_QUERY } from "@/utils/Data";
 
 const Products: FC<{ category?: string }> = () => {
+  const { t } = useTranslation();
   const [products, setProducts] = useState<ProductType[]>([]);
   useEffect(() => {
     const fetchInitialData = async () => {
@@ -25,7 +27,6 @@ const Products: FC<{ category?: string }> = () => {
         console.error("Error fetching data:", error);
       }
     };
-
     fetchInitialData();
   }, []);
 
@@ -36,24 +37,25 @@ const Products: FC<{ category?: string }> = () => {
   ));
 
   return (
-    <div className="products mb-6">
+    <div className="products my-6">
       <div className="products__info my-12 flex items-end justify-between">
-        <h3 className="w-[3ch] text-[2.5rem] leading-[2.75rem] font-medium">
-          New Arrival
+        <h3 className="text-[2.5rem] leading-[2.75rem] font-medium">
+          {t("phones_and_gadgets")}
         </h3>
-        <StyledLink destination={"/products"} name="More Products" />
+        <StyledLink destination={"/products"} name={t("more_products")} />
       </div>
       <Swiper
         spaceBetween={8}
-        slidesPerView={1.3}
+        slidesPerView={1.5}
         breakpoints={{
-          440: { slidesPerView: 2, spaceBetween: 8 },
-          640: { slidesPerView: 3, spaceBetween: 10 },
-          800: { slidesPerView: 4, spaceBetween: 14 },
-          1024: { slidesPerView: 4.5, spaceBetween: 24 },
+          440: { slidesPerView: 2.5, spaceBetween: 8 },
+          640: { slidesPerView: 3.4, spaceBetween: 10 },
+          800: { slidesPerView: 4.5, spaceBetween: 14 },
+          1024: { slidesPerView: 5.5, spaceBetween: 24 },
         }}
         scrollbar={{ hide: true }}
-        modules={[Scrollbar]}
+        modules={[Scrollbar, Mousewheel]}
+        mousewheel={{ forceToAxis: true }}
         className="mySwiper"
       >
         {products?.length <= 0 ? <ProductLoading /> : SwiperContents}

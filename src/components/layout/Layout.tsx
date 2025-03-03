@@ -5,7 +5,7 @@ import Navbar from "../navbar/Navbar";
 
 const Layout = () => {
   return (
-    <main>
+    <main className="bg-slate-50">
       <div className="sticky top-0 z-50 bg-white">
         <Header />
         <Navbar />

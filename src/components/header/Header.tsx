@@ -64,7 +64,7 @@ const Header = () => {
           onClick={() => changeLanguage(i18n.language === "en" ? "uz" : "en")}
         >
           <img
-            src={i18n.language === "en" ? UsaFlagImg : UzbFlagImg}
+            src={i18n.language === "en" ? UzbFlagImg : UsaFlagImg}
             alt={i18n.language === "en" ? "USA Flag" : "Uzbekistan Flag"}
             className="h-4 w-4 rounded-full"
           />
@@ -111,7 +111,7 @@ const Header = () => {
               }
             >
               <img
-                src={i18n.language === "en" ? UsaFlagImg : UzbFlagImg}
+                src={i18n.language === "en" ? UzbFlagImg : UsaFlagImg}
                 alt={i18n.language === "en" ? "USA Flag" : "Uzbekistan Flag"}
                 className="h-4 w-4 rounded-full"
               />

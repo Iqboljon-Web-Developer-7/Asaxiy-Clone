@@ -20,6 +20,8 @@ import Samsung from "@/assets/brends/samsung.webp";
 import Sony from "@/assets/brends/sony.webp";
 import Xiaomi from "@/assets/brends/xiomi.webp";
 
+import { useTranslation } from "react-i18next";
+
 const brands = [
   { name: "Nokia", src: Nokia },
   { name: "Hoffmann", src: Hoffman },
@@ -40,12 +42,14 @@ const brands = [
 ];
 
 export default function BrandCarousel() {
+  const { t } = useTranslation();
+
   return (
     <div className="p-6 rounded-lg">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Известные бренды</h2>
+        <h2 className="text-xl font-semibold">{t("famous_brands")}</h2>
         <a href="#" className="text-blue-500 text-sm">
-          Все бренды
+          {t("all_brands")}
         </a>
       </div>
 

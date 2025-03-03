@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 
 import "./i18n/i18n";
 import "./scss/main.scss";
+import "react-medium-image-zoom/dist/styles.css";
 
 import Pages from "./pages/Pages.tsx";
 import { BrowserRouter } from "react-router-dom";

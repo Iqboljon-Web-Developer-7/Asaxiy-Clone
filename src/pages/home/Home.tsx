@@ -4,10 +4,10 @@ import Products from "@/components/Products/Products";
 
 const Home = () => {
   return (
-    <div className="bg-slate-50 wrapper">
+    <div className="wrapper">
+      <Products />
       <FamouseBrands />
       <About />
-      <Products />
     </div>
   );
 };
