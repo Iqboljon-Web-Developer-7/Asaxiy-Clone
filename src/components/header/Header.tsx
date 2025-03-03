@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="px-[1%] md:px-[3%] py-4 flex items-center justify-between bg-white border-b">
+    <header className="px-[1%] md:px-[3%] py-4 flex items-center justify-between bg-white border-b wrapper">
       <img
         onClick={() => navigate("/")}
         src={AsaxiyLogoImg}

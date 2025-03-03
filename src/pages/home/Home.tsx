@@ -3,7 +3,7 @@ import FamouseBrands from "@/components/famousBrends/FamousBrends";
 
 const Home = () => {
   return (
-    <div className="bg-slate-50">
+    <div className="bg-slate-50 wrapper">
       <FamouseBrands />
       <About />
     </div>

@@ -41,7 +41,7 @@ const brands = [
 
 export default function BrandCarousel() {
   return (
-    <div className="bg-gray-100 p-6 rounded-lg">
+    <div className="p-6 rounded-lg">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold">Известные бренды</h2>
         <a href="#" className="text-blue-500 text-sm">
